@@ -6,15 +6,31 @@ namespace Laboratorio_1_cv_poo
     {
         private string name;
         private string lastname;
-        public Persona()
+        public Persona(string name, string lastname)
 
         {
-            Console.Write("Name: ");
-            name = Console.ReadLine();
-            Console.Write("Lastname: ");
-            lastname = Console.ReadLine();
+            this.name = name;
+            this.lastname = lastname;
+
+            //Console.Write("Name: ");
+            //name = Console.ReadLine();
+            //Console.Write("Lastname: ");
+            //lastname = Console.ReadLine();
         }
 
+        public string GetName()
+
+        {
+            return name;
+
+        }
+
+        public string GetLastname()
+
+        {
+            return lastname;
+
+        }
         public void Lanzar()
 
         {
@@ -24,7 +40,9 @@ namespace Laboratorio_1_cv_poo
         }
         static void Main(string[] args)
         {
-            Persona person = new Persona();
+            Persona person = new Persona("Camila", "Villalobos");
+            Console.WriteLine(person.GetName());
+            Console.WriteLine(person.GetLastname());
             person.Lanzar();
             Console.ReadKey();
         }
