@@ -35,7 +35,7 @@ namespace Laboratorio_1_cv_poo
         }
         static void Main(string[] args)
         {
-            Persona person = new Persona("Camila", "Villalobos");
+            Persona person = new Persona("Bob", "Kunga");
             Console.WriteLine(person.GetName());
             Console.WriteLine(person.GetLastname());
             person.Lanzar();
