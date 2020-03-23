@@ -11,11 +11,6 @@ namespace Laboratorio_1_cv_poo
         {
             this.name = name;
             this.lastname = lastname;
-
-            //Console.Write("Name: ");
-            //name = Console.ReadLine();
-            //Console.Write("Lastname: ");
-            //lastname = Console.ReadLine();
         }
 
         public string GetName()
@@ -44,7 +39,6 @@ namespace Laboratorio_1_cv_poo
             Console.WriteLine(person.GetName());
             Console.WriteLine(person.GetLastname());
             person.Lanzar();
-            Console.ReadKey();
         }
 
     }
